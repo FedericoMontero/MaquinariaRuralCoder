@@ -2,7 +2,7 @@ body{
     margin: 0 0 55px;
 }
 
-/*Menu Inferior*/
+/*-----------------------------Menu Inferior------------------------------------------*/
 .nav{
     position: fixed;/*esto lo coloca en la parte inferior*/
     bottom:0;
@@ -12,6 +12,7 @@ body{
     background-color: #89b449;
     display:flex;
     overflow-x: auto;
+    z-index: 1000; /*para que se vea encima de todo soluciona el problema de que las tarjetas lo tapen.*/
 }
 
 .nav__link{
@@ -67,10 +68,11 @@ body{
 
 }
 
-/*Equipamiento*/
+/*--------------------Equipamiento----------------------------*/
 
 .cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
     
 .card{
@@ -98,8 +100,9 @@ body{
 
 }
 
-/*Trabajos*/
+/*---------------------------------INICIOOOOOO---------------------------------------------*/
 .container {
+    
     display: flex;
     justify-content: center;
 }
@@ -178,17 +181,24 @@ body{
   display: table;
   clear: both;
 }
-/*Responsive*/
+/*---------------------------------Responsive---------------------------------------------*/
 
 @media only screen and (max-width: 600px){
     .nav .nav__text{
         display: none;
         width: 100%;
     }
-
+/*responsive cartas de inicio*/
     .container{
         width: 100%;
         display: block;
+        margin-bottom: 20px;
+        
+    }
+/*responsive cartas de equipamiento*/
+    .cards{
+        width: 100%;
+       display: inline-block;
         margin-bottom: 20px;
     }
 
@@ -222,53 +232,27 @@ body{
     input{
         text-align: center;
     }
-    
 
 }
 
-.grid-1{
+
+@media (min-width: 750px) {
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+ /*----------------------------Rendimiento-----------------------------------*/
+.grid-3{
     display: grid;
-    width: 100%;
-    max-width: 770px;
-    background-color: #f5f7f8;
-    margin:auto;
-
-    grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px auto 80px;
-  grid-gap: 20px;
-  
-  grid-template-areas: "header   header   header"
-                       "main     main     sidebar"
-                       "footer   footer   footer";
+    margin: 10px;
+    max-width: 1000px;
 }
 
-.grid-1 div{
+ .grid-3 div{
     color: white;
     font-size: 20px;
     padding: 20px;
 }
 
-.item-1{
-    margin: 1px;
-    background-color: #0d25ff;
-    grid-area: header;
-    width: 150px;
-    height: 150px;
-}
 
-
-.item-3{
-    background-color: #F6C915;
-    grid-area: sidebar;
-    width: 150px;
-    height: 150px;
-}
-.item-4{
-    background-color: #ff5a0d;
-    grid-area: footer;
-   
-    height: 150px;
-}
 
 .text{
     font-size: 3rem;

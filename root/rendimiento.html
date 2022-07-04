@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Granja App | Rendimiento</title>
     <link rel="icon" href="images/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <<nav class="nav">
+    <nav class="nav">
         <a class="nav__link" href="trabajos.html">
             <i class="material-icons nav__icon">construction</i>
             <span class="nav__text">Trabajos</span>
@@ -33,16 +33,92 @@
             <span class="nav__text">Rendimiento</span>
         </a>
     </nav>
-    <div class="text">Rendimiento &#128185</div>
-      <section class="grid-1">
-        <div class="item-1">1</div>
-        <div class="item-2"></div>
-        <div class="item-3">3</div>
-        <div class="item-4">4</div>
-      </section>
-</div>
 
+    <div class="text">Rendimiento &#128185;</div>
 
+    <div class="grid-3">
+        <div class="item-1">
+            <canvas id="buyers"></canvas>
+        </div>
+        <div class="item-2">
+            <canvas id="countries"></canvas>
+        </div>
+        <div class="item-4">
+            <canvas id="income"></canvas>
+        </div>
+       
+    </div>
+    
+
+<script>
+    // line chart data
+    var buyerData = {
+        labels : ["January","February","March","April","May","June"],
+        datasets : [
+        {
+            fillColor : "rgba(172,194,132,0.4)",
+            strokeColor : "#ACC26D",
+            pointColor : "#fff",
+            pointStrokeColor : "#9DB86D",
+            data : [203,156,99,251,305,247]
+        }
+    ]
+    }
+    // get line chart canvas
+    var buyers = document.getElementById('buyers').getContext('2d');
+    // draw line chart
+    new Chart(buyers).Line(buyerData);
+    // pie chart data
+    var pieData = [
+        {
+            value: 20,
+            color:"#878BB6"
+        },
+        {
+            value : 40,
+            color : "#4ACAB4"
+        },
+        {
+            value : 10,
+            color : "#FF8153"
+        },
+        {
+            value : 30,
+            color : "#FFEA88"
+        }
+    ];
+    // pie chart options
+    var pieOptions = {
+         segmentShowStroke : false,
+         animateScale : true
+    }
+    // get pie chart canvas
+    var countries= document.getElementById("countries").getContext("2d");
+    // draw pie chart
+    new Chart(countries).Pie(pieData, pieOptions);
+    // bar chart data
+    var barData = {
+        labels : ["January","February","March","April","May","June"],
+        datasets : [
+            {
+                fillColor : "#48A497",
+                strokeColor : "#48A4D1",
+                data : [456,479,324,569,702,600]
+            },
+            {
+                fillColor : "rgba(73,188,170,0.4)",
+                strokeColor : "rgba(72,174,209,0.4)",
+                data : [364,504,605,400,345,320]
+            }
+        ]
+    }
+    // get bar chart canvas
+    var income = document.getElementById("income").getContext("2d");
+    // draw bar chart
+    new Chart(income).Bar(barData);
+</script>
 
 </body>
+
+
 </html>
