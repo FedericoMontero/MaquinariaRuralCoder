@@ -37,29 +37,106 @@
     <div class="text">Rendimiento &#128185;</div>
 
     <div class="grid-3">
+        
         <div class="item-1">
+            <h3>Evolución mes a mes de ventas</h3>
             <canvas id="buyers"></canvas>
         </div>
+
+        <div class="item-1">
+            <h3>Compras por mes</h3>
+            <canvas id="ventas"></canvas>
+        </div>
+        
         <div class="item-2">
+            <h3>Productos cargados</h3>
             <canvas id="countries"></canvas>
         </div>
+
+        <div class="item-1">
+            <h3>Evolución mes a mes de la carga</h3>
+            <canvas id="grafico2"></canvas>
+        </div>
+        
         <div class="item-4">
+            <h3>Ventas y Compras</h3>
             <canvas id="income"></canvas>
+        </div>
+
+        <div class="item-4">
+            <h3>Stock en Almacén</h3>
+            <canvas id="grafico3"></canvas>
         </div>
        
     </div>
     
 
 <script>
-    // line chart data
+
+var buyerData = {
+        labels : ["Enero","Febrero","Marzo","Abril","Mayo","Junio"],
+        datasets : [
+        {
+            fillColor : "rgba(255,255,255,1)",
+            strokeColor : "#ff6a00",
+            pointColor : "#fff",
+            pointStrokeColor : "#ff6a00",
+            data : [203,156,99,251,305,247]
+        }
+    ]
+    }
+    // get line chart canvas
+    var buyers = document.getElementById('ventas').getContext('2d');
+    // draw line chart
+    new Chart(buyers).Line(buyerData);
+
+
     var buyerData = {
-        labels : ["January","February","March","April","May","June"],
+        labels : ["Enero","Febrero","Marzo","Abril","Mayo","Junio"],
+        datasets : [
+        {
+            fillColor : "rgba(156,103,163,100)",
+            strokeColor : "#00ffef",
+            pointColor : "#fff",
+            pointStrokeColor : "#00ffef",
+            data : [203,156,99,251,305,247]
+        }
+    ]
+    }
+    // get line chart canvas
+    var buyers = document.getElementById('grafico3').getContext('2d');
+    // draw line chart
+    new Chart(buyers).Line(buyerData);
+
+
+    var buyerData = {
+        labels : ["Enero","Febrero","Marzo","Abril","Mayo","Junio"],
         datasets : [
         {
             fillColor : "rgba(172,194,132,0.4)",
             strokeColor : "#ACC26D",
             pointColor : "#fff",
             pointStrokeColor : "#9DB86D",
+            data : [203,156,99,251,305,247]
+        }
+    ]
+    }
+    // get line chart canvas
+    var buyers = document.getElementById('grafico2').getContext('2d');
+    // draw line chart
+    new Chart(buyers).Line(buyerData);
+
+
+
+    // line chart data
+    var buyerData = {
+        labels : ["Enero","Febrero","Marzo","Abril","Mayo","Junio"],
+        datasets : [
+        {
+            fillColor : "rgba(203,250,255,100)",
+            strokeColor : "#3f5efb",
+            pointColor : "#fff",
+            pointStrokeColor : "#002aff",
             data : [203,156,99,251,305,247]
         }
     ]
@@ -72,18 +149,22 @@
     var pieData = [
         {
             value: 20,
+            label:"Soja",
             color:"#878BB6"
         },
         {
             value : 40,
+            label:"Trigo",
             color : "#4ACAB4"
         },
         {
             value : 10,
+            label:"Lopulo",
             color : "#FF8153"
         },
         {
             value : 30,
+            label:"Cebada",
             color : "#FFEA88"
         }
     ];
