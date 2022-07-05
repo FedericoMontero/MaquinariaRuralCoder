@@ -14,7 +14,7 @@ h3{
     height: 50px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     background-color: #89b449;
-    display:flex;
+    
     overflow-x: auto;
     z-index: 1000; /*para que se vea encima de todo soluciona el problema de que las tarjetas lo tapen.*/
 }
@@ -192,6 +192,9 @@ h3{
         display: none;
         width: 100%;
     }
+    .nav{
+        display: flex;
+    }
 /*responsive cartas de inicio*/
     .container{
         width: 100%;
@@ -243,6 +246,9 @@ h3{
 @media (min-width: 750px) {
     .grid-3 { grid-template-columns: repeat(3, 1fr); }
 }
+.nav{
+    display: flex;
+}
  /*----------------------------Rendimiento-----------------------------------*/
 .grid-3{
     display: grid;
@@ -261,4 +267,41 @@ h3{
 .text{
     font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Menu lateral*/
+@media (min-width: 1000px) {
+.nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #0d25ff;
+    padding: 6px 4px;
+    z-index: 1000;
+    border-radius: 12px;
+    border: none;
+    display: block;
+    
+}
+
+
+.nav .nav__link{
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    padding: auto;
+}
+
+.container{
+    margin-left: 190px;
+}
+
+.trabajos-info{
+    margin-left: 190px;
+}
+
 }
