@@ -305,3 +305,36 @@ h3{
 }
 
 }
+
+/*Compras animacion compras*/
+
+.buttonload {
+    background-color: #04AA6D; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    justify-content: center;
+    margin-left: 270px;
+
+  }
+
+  /* boton darkmode*/
+  .botondarkmode{
+    display: inline-block;
+    animation: scale linear 2s infinite;
+    border: none;
+    background-color: white;
+  }
+
+  @keyframes scale{
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(3deg);
+    }
+    70%{
+        transform: rotate(-3deg);
+    }
+  }
