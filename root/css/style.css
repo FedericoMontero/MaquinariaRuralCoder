@@ -188,6 +188,9 @@ h3{
 /*---------------------------------Responsive---------------------------------------------*/
 
 @media only screen and (max-width: 600px){
+
+
+
     .nav .nav__text{
         display: none;
         width: 100%;
@@ -238,6 +241,14 @@ h3{
     }
     input{
         text-align: center;
+    }
+
+    .form-compras{
+       margin:50px;
+    }
+    
+    .form-compras .form-control {
+        margin: 15px;
     }
 
 }
@@ -304,9 +315,39 @@ h3{
     margin-left: 190px;
 }
 
+.form-compras{
+    margin-left: 270px;
+    margin-right: 100px;
+    margin-top: 150px;
 }
 
-/*Compras animacion compras*/
+.form-compras .form-control {
+    margin: 15px;
+}
+
+#alerta{
+    margin-left: 270px;
+}
+
+.table-info{
+    margin-left: 35%;
+}
+
+.grid-3{
+    margin-left: 270px;
+}
+
+#rendimiento-titulo{
+    margin-left: 270px;
+}
+
+
+
+}
+
+/*----------------------------------Compras animacion compras----------------------------------------*/
+
+
 
 .buttonload {
     background-color: #04AA6D; /* Green background */
