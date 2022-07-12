@@ -19,7 +19,7 @@
       </div>
 
     <nav class="nav">
-        <a class="nav__link" href="trabajos.html">
+        <a class="nav__link" href="tabajos.html">
             <i class="material-icons nav__icon">construction</i>
             <span class="nav__text">Trabajos</span>
         </a>
@@ -27,7 +27,7 @@
             <i class="material-icons nav__icon">agriculture</i>
             <span class="nav__text">Equipamiento</span>
         </a>
-        <a class="nav__link nav__link--active" href="index.html">
+        <a class="nav__link nav__link--active" href="../index.html">
             <i class="material-icons nav__icon">local_shipping</i>
             <span class="nav__text">Inicio</span>
         </a>
@@ -41,7 +41,7 @@
         </a>
     </nav>
 
-    <button type="button" class="botondarkmode"><img src="images\brightness.png"></button>
+    <button type="button" onclick="darkmode()" class="botondarkmode"><img src="images\icondark.png"></button>
 
 <div class="form-compras">
     <h1 class="titulo_centrado">Formulario de compras</h1>
@@ -102,6 +102,14 @@
             });
         });
     });
+
+    function darkmode(){
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+
+
+
 </script>
 </body>
 </html>
