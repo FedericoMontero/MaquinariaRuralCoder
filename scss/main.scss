@@ -205,9 +205,63 @@ h1{
    
 
 }
+//
+.bienvenida-login{
+   display: flex;
+   
+   //height: 1000%;
+   
+}
+.bienvenida{
+   border-radius:0px 23px 23px 0px;
+   width: 50%;
+   background-color: #04AA6D;
+   height: 100%;
+}
 
+.login{
+   
+   width: 50%;
+   background-color: white;
+   height: 100%;
+}
+.img-welcome{
+   align-content: center;
+   width: 80%;
+   margin: 80px;
+   
+}
+.title-welcome{
+   margin-top: 7rem;
+   text-align: center;
+   font-size: 60px;
+}
 
+.title-login{
+   margin-top: 10rem;
+   text-align: center;
+   font-size: 80px;
+}
 
+.autho{
+   align-items: center;
+   margin: 100px;
+   display: grid;
+}
 
+.login-input{
+   margin: 15px;
+   font-size: 25px;
+   border: none;
+}
+
+.boton-login{
+   margin-top: 25px;
+   font-size: 30px;
+   border: none;
+   border-radius: 20px;
+   background:linear-gradient(to right, $gradiente-claro, $gradiente-oscuro);
 
 }
+}
+

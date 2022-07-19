@@ -1,160 +1,51 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Granja App | Inicio</title>
-    <link rel="icon" href="images/favicon-32x32.png">
+    <title>Granja App | Inicio Sesion</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="root/css/style.css">
+   <!-- <link rel="stylesheet" href="css/style.css"> -->
+   <link rel="stylesheet" href="../css/main.css">
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
-<!--En inicio va la tabla y cards con informacion importante-->
-<body>
-    <div id="alerta" class="alert alert-dark" role="alert">
-        PROXIMAMENTE: Pruebe el Modo Dark en version Mobile.
-      </div>
-    <nav class="nav">
-        <a class="nav__link" href="root/trabajos.html">
-            <i class="material-icons nav__icon">construction</i>
-            <span class="nav__text">Trabajos</span>
-        </a>
-        <a class="nav__link" href="root/equipamiento.html">
-            <i class="material-icons nav__icon">agriculture</i>
-            <span class="nav__text">Equipamiento</span>
-        </a>
-        <a class="nav__link nav__link--active" href="index.html">
-            <i class="material-icons nav__icon">local_shipping</i>
-            <span class="nav__text">Inicio</span>
-        </a>
-        <a class="nav__link" href="root/compras.html">
-            <i class="material-icons nav__icon">shopping_cart</i>
-            <span class="nav__text">Compras</span>
-        </a>
-        <a class="nav__link" href="root/rendimiento.html">
-            <i class="material-icons nav__icon">trending_up</i>
-            <span class="nav__text">Rendimiento</span>
-        </a>
-    </nav>
+<body class="body-login">
+    <div class="bienvenida-login" id="bienvenida-login">
+        <div class="bienvenida">
+            <p class="title-welcome">El proceso de la digitalizacion de la agricultura</p>
+        <img src="./root/images/welcome.svg" class="img-welcome">
+        </div>
+        <div class="login">
+            <img src="" alt="">
+        <p class="title-login">Inicia sesión</p>
+            <div class="autho">
+    <input class="login-input" type="text" placeholder="Ingresa tu usuario" name="uname" required>
+    <input class="login-input" type="password" placeholder="Ingresa tu contraseña" name="psw" required>
 
-    <button type="button" onclick="darkmode()" class="botondarkmode"><img src="root/images/brightness.png"></button>
-    <div class="container">
-        <div class="card">
-            <div class="card__meta"> 
-                <h2>Trabajo 1</h2>
-                <div class="card__meta__field card__meta__field--italic">Cargar 1 cosa</div>
-                <div class="card__meta__field card__meta__field--secondary">Estado no hecho</div>
-                <div class="card__meta__field card__meta__field--secondary">
-                    <a href="root/trabajos.html">Ver Trabajos</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card__meta"> 
-                <h2>Trabajo 1</h2>
-                <div class="card__meta__field card__meta__field--italic">Cargar 1 cosa</div>
-                <div class="card__meta__field card__meta__field--secondary">Estado no hecho</div>
-                <div class="card__meta__field card__meta__field--secondary">
-                    <a href="root/trabajos.html">Ver Trabajos</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card__meta"> 
-                <h2>Trabajo 1</h2>
-                <div class="card__meta__field card__meta__field--italic">Cargar 1 cosa</div>
-                <div class="card__meta__field card__meta__field--secondary">Estado no hecho</div>
-                <div class="card__meta__field card__meta__field--secondary">
-                    <a href="root/trabajos.html">Ver Trabajos</a>
-                </div>
+    <button class="boton-login" role="link" href="./root/inicio.html" onclick="window.location='./root/inicio.html'">Iniciar Sesión</button>
             </div>
         </div>
     </div>
-
-    <div class="table-info">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Trabajo</th>
-                <th>Material</th>
-                <th>Estado</th>
-                <th>Carga(kg)</th>
-                <th>Inicio</th>
-                <th>Fin</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>6354736</td>
-                <td>SOJA</td>
-                <td>PENDIENTE</td>
-                <td>520</td>
-                <td>10/06/22</td>
-                <td>12/07/22</td>
-            </tr>
-            <tr>
-                <td>6354936</td>
-                <td>TRIGO</td>
-                <td>PENDIENTE</td>
-                <td>522</td>
-                <td>10/06/22</td>
-                <td>12/07/22</td>
-            </tr>
-            <tr>
-                <td>6350736</td>
-                <td>SOJA</td>
-                <td>PENDIENTE</td>
-                <td>500</td>
-                <td>31/06/22</td>
-                <td>12/07/22</td>
-            </tr>
-            <tr>
-                <td>6354736</td>
-                <td>SOJA</td>
-                <td>PENDIENTE</td>
-                <td>510</td>
-                <td>10/06/22</td>
-                <td>12/07/22</td>
-            </tr>
-            <tr>
-                <td>6354736</td>
-                <td>SOJA</td>
-                <td>PENDIENTE</td>
-                <td>520</td>
-                <td>10/06/22</td>
-                <td>12/07/22</td>
-            </tr>
-            <tr>
-                <td>6254736</td>
-                <td>TRIGO</td>
-                <td>PENDIENTE</td>
-                <td>560</td>
-                <td>10/06/22</td>
-                <td>12/07/22</td>
-            </tr>
-        </tbody>
-        </table>
-    </div>
+<!--Este script escanea el tamaño total de la pantalla y le da el height que corresponde-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+        
+              var height = $(window).height();
+        
+              $('#bienvenida-login').height(height);
+        });
+    </script>
 
 
-<footer>
-    <p>Hecho con &#128156; por Fede &#128584;</p>
-    <p>Síguenos en <a href=”#”>Facebook</a></p>
-    <p>Síguenos en <a href=”#”>Instagram</a></p>
-    <p>Síguenos en <a href=”#”>Linkedin</a></p>
-</footer>
-<script>
-    function darkmode(){
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-    }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
 </body>
+
 </html>

@@ -137,4 +137,41 @@ h1 {
     bottom: 0;
     width: 100%;
     padding: 20px;
-    background-color: #fff; } }
+    background-color: #fff; }
+  .bienvenida-login {
+    display: flex; }
+  .bienvenida {
+    border-radius: 0px 23px 23px 0px;
+    width: 50%;
+    background-color: #04AA6D;
+    height: 100%; }
+  .login {
+    width: 50%;
+    background-color: white;
+    height: 100%; }
+  .img-welcome {
+    align-content: center;
+    width: 80%;
+    margin: 80px; }
+  .title-welcome {
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 60px; }
+  .title-login {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 80px; }
+  .autho {
+    align-items: center;
+    margin: 100px;
+    display: grid; }
+  .login-input {
+    margin: 15px;
+    font-size: 25px;
+    border: none; }
+  .boton-login {
+    margin-top: 25px;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #aaffa9, #11ffbd); } }
