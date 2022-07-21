@@ -6,7 +6,11 @@ nav {
   height: 50px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   background-color: #1ed760;
-  z-index: 1000; }
+  z-index: 1000;
+  /*
+   .nav__link--active{
+      background-color: $verde-boton;
+   }*/ }
   nav .nav__link {
     display: flex;
     flex-direction: column;
@@ -24,8 +28,6 @@ nav {
     transition: background-color 0.1s ease-in-out; }
   nav .nav__link:hover {
     background-color: #1db954; }
-  nav .nav__link--active {
-    background-color: #04AA6D; }
 
 .card-text {
   color: #000000; }
@@ -73,6 +75,12 @@ h1 {
   display: inline-block;
   font-size: 16px; }
 
+#tabla-trabajos {
+  margin-top: 10%; }
+
+.grid-3 {
+  margin-left: 10px; }
+
 @media (min-width: 1000px) {
   .nav {
     position: fixed;
@@ -83,7 +91,7 @@ h1 {
     background-color: #1ed760;
     padding: 6px 4px;
     z-index: 1000;
-    border-radius: 12px;
+    border-radius: 0px 15px 15px 0px;
     border: none;
     display: block; }
   .nav .nav__link {
@@ -106,10 +114,16 @@ h1 {
     margin: 15px; }
   #alerta {
     margin-left: 270px; }
+  #tabla-trabajos {
+    margin-top: 10%; }
   .table-info {
-    margin-left: 35%; }
+    margin-left: 35%;
+    margin-right: 10%; }
   .grid-3 {
-    margin-left: 270px; }
+    margin-left: 270px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 5%; }
   #rendimiento-titulo {
     margin-left: 270px; }
   .botondarkmode {
@@ -174,4 +188,29 @@ h1 {
     font-size: 30px;
     border: none;
     border-radius: 20px;
-    background: linear-gradient(to right, #aaffa9, #11ffbd); } }
+    background: linear-gradient(to right, #aaffa9, #11ffbd); }
+  .container {
+    display: flex;
+    justify-content: center; }
+  .card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    -webkit-box-shadow: 15px 10px 11px -4px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 15px 10px 11px -4px rgba(0, 0, 0, 0.42);
+    box-shadow: 15px 10px 11px -4px rgba(0, 0, 0, 0.42);
+    padding: 1em; }
+  .card__meta {
+    margin-left: 1em; }
+  .card__meta h2 {
+    margin: .5em 0 0 0;
+    font-size: 1.5em; }
+  .card__meta__field {
+    margin-top: .5em;
+    font-size: .9em; }
+  .card__meta__field--italic {
+    font-style: italic; }
+  .card__meta__field--secondary {
+    color: #777; }
+  .card__meta__field--secondary a {
+    color: #777; } }

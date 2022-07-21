@@ -11,7 +11,7 @@ $darkmode:#191414;
 $mobile:300px;
 $desktop:1000px;
 
-//Menu
+//-------------------------------------MENU-----------------------------------
 nav{
    position: fixed;
    bottom: 0;
@@ -40,10 +40,10 @@ nav{
 
    .nav__link:hover{
       background-color: $verde-oscuro;
-   }
+   }/*
    .nav__link--active{
       background-color: $verde-boton;
-   }
+   }*/
 }
 .card-text{
    color:#000000
@@ -77,7 +77,7 @@ nav{
    }
 }
 
-//formulario compras
+//---------------------------------------FORMULARIO COMPRAS-------------------------------
 
 h1{
    background: linear-gradient(to right, $gradiente-claro, $gradiente-oscuro);
@@ -103,7 +103,19 @@ h1{
    font-size: 16px;
 }
 
-//version desktop
+
+//-------------------------------INICIO-----------------------------------------------------
+
+#tabla-trabajos{
+   margin-top: 10%;
+  }
+
+  //--------------------------------RENDIMEINTO----------------------------------------
+  .grid-3{
+   margin-left: 10px;
+  }
+
+//-----------------------------VERSION DESKTOP--------------------------------------------------
 
 
 
@@ -118,7 +130,7 @@ h1{
       background-color: $verde-claro;
       padding: 6px 4px;
       z-index: 1000;
-      border-radius: 12px;
+      border-radius: 0px 15px 15px 0px; //Borde del menu solamente en las 2 puntas de la izquierda.
       border: none;
       display: block;
    }
@@ -154,13 +166,19 @@ h1{
   #alerta{
       margin-left: 270px;
   }
-  
+  #tabla-trabajos{
+   margin-top: 10%;
+  }
   .table-info{
       margin-left: 35%;
+      margin-right: 10%;
   }
   
   .grid-3{
       margin-left: 270px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-right: 5%;
   }
   
   #rendimiento-titulo{
@@ -263,5 +281,52 @@ h1{
    background:linear-gradient(to right, $gradiente-claro, $gradiente-oscuro);
 
 }
+
+
+
+.container {
+    
+   display: flex;
+   justify-content: center;
+}
+
+.card {
+   display: flex;
+   border: 1px solid #ccc;
+   border-radius: 1rem;
+   -webkit-box-shadow: 15px 10px 11px -4px rgba(0,0,0,0.42);
+   -moz-box-shadow: 15px 10px 11px -4px rgba(0,0,0,0.42);
+   box-shadow: 15px 10px 11px -4px rgba(0,0,0,0.42);
+   padding: 1em;
+}
+
+
+.card__meta {
+   margin-left: 1em;
+}
+
+.card__meta h2 {
+   margin: .5em 0 0 0;
+   font-size: 1.5em;
+}
+
+.card__meta__field {
+   margin-top: .5em;
+   font-size: .9em;
+}
+
+.card__meta__field--italic {
+   font-style: italic;
+}
+
+.card__meta__field--secondary {
+   color: #777
+}
+
+.card__meta__field--secondary a {
+   color: #777;
+}
+
+
 }
 
