@@ -65,7 +65,7 @@ h1 {
 .form-compras .form-control {
   margin: 15px; }
 
-.boton_compras {
+.boton_compras, #boton-agregarlinea {
   margin: 3px;
   background: linear-gradient(to right, #aaffa9, #11ffbd);
   border: none;
@@ -214,3 +214,21 @@ h1 {
     color: #777; }
   .card__meta__field--secondary a {
     color: #777; } }
+
+/*----------------------------MAP GET---------------------------*/
+.footer {
+  background-color: #3a5795;
+  color: red;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px; }
+
+/*---------------------EXTEND------------------*/
+/*Voy a traer la configuracion de Boton compras para copiar el formato y cambiar el backgroud del boton agregar linea*/
+#boton-agregarlinea {
+  background: linear-gradient(to right, #22c1c3, #fdbb2d); }
+
+/*MIXIN*/
+#rendimiento-titulo {
+  background: linear-gradient(to right, #22c1c3, #fdbb2d);
+  font-size: 30px; }

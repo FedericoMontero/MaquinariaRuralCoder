@@ -330,3 +330,42 @@ h1{
 
 }
 
+/*----------------------------MAP GET---------------------------*/
+$redes:(
+   facebook:#3a5795,
+   instagram:rgb(205, 96, 156)
+);
+$estilos:(
+   color:red,
+   alineacion:center,
+   fuente:30px,
+   padding:10px
+);
+
+.footer{
+   background-color: map-get($redes, facebook );
+   color:map-get($estilos , color );
+   text-align: map-get($estilos , alineacion );
+   font-size: map-get($estilos, fuente);
+   padding: map-get($estilos, padding);
+}
+
+/*---------------------EXTEND------------------*/
+
+/*Voy a traer la configuracion de Boton compras para copiar el formato y cambiar el backgroud del boton agregar linea*/
+
+#boton-agregarlinea{
+   @extend .boton_compras;
+   background:linear-gradient(to right, #22c1c3, #fdbb2d);
+}
+
+/*MIXIN*/
+@mixin titulobase {
+   background:linear-gradient(to right, #22c1c3, #fdbb2d);
+   font-size: 30px;
+}
+
+#rendimiento-titulo{
+   @include titulobase()
+}
+
