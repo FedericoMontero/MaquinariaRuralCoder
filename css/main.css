@@ -6,11 +6,7 @@ nav {
   height: 50px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   background-color: #1ed760;
-  z-index: 1000;
-  /*
-   .nav__link--active{
-      background-color: $verde-boton;
-   }*/ }
+  z-index: 1000; }
   nav .nav__link {
     display: flex;
     flex-direction: column;
@@ -245,48 +241,6 @@ h1 {
   .card__meta__field--secondary a {
     color: #777; } }
 
-/*LOGIN MOBILE
-
-.img-welcome{
-   display: none;
-}
-.body-login{
-   display: grid;
-   margin-top: 30%;
-   grid-template-columns: repeat(1,1fr);
-   text-align: center;
-   background: linear-gradient(to right, #accbee, #e7f0fd);
-}
-
-.title-welcome{
-   font-size: 30px;
-   font-family: sans-serif;
-}
-.title-login{
-   font-size: 20px;
-   font-family: sans-serif;
-}
-
-.autho{
-   display: grid;
-   margin: 20px;
-}
-.login-input{
-   margin: 16px;
-   border: none;
-   border-radius: 12px;
-   font-size: 20px;
-}
-
-.boton-login{
-   margin-top: 40px;
-   border: none;
-   border-radius: 20px;
-   font-size: 25px;
-   background: linear-gradient(to right, #667eea, #764ba2);
-}
-
-*/
 /*----------------------------MAP GET---------------------------*/
 .footer {
   background-color: #3a5795;
