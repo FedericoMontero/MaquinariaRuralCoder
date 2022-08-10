@@ -52,7 +52,8 @@ nav{
 //---------------------------------Boton darkmode----------------------------------------------------------------
 .dark-mode{
    background-color: $darkmode;
-   color: $blanco-background;
+  // color: $blanco-background;
+  color:$gris
 }
 .botondarkmode{//estetica del boton
    display:inline-block;
@@ -412,3 +413,7 @@ $estilos:(
    @include titulobase()
 }
 
+
+.table-info{
+   background-color: #aaffaa; 
+}

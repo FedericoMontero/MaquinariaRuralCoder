@@ -33,7 +33,7 @@ nav {
 
 .dark-mode {
   background-color: #191414;
-  color: #fff; }
+  color: #757575; }
 
 .botondarkmode {
   display: inline-block;
@@ -262,3 +262,6 @@ h1 {
 #rendimiento-titulo {
   background: linear-gradient(to right, #22c1c3, #fdbb2d);
   font-size: 30px; }
+
+.table-info {
+  background-color: #aaffaa; }
