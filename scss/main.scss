@@ -49,7 +49,7 @@ nav{
 .card{
    margin-top: 20px;
 }
-//Boton darkmode
+//---------------------------------Boton darkmode----------------------------------------------------------------
 .dark-mode{
    background-color: $darkmode;
    color: $blanco-background;
@@ -87,6 +87,10 @@ h1{
 
 .form-compras .form-control{
    margin: 15px;
+}
+
+.form-select{
+   margin-left: 15px;
 }
 
 .boton_compras{
@@ -193,6 +197,7 @@ h1{
       margin-right: 100px;
       margin-top: 150px;
   }
+
   
   .form-compras .form-control {
       margin: 15px;
@@ -207,6 +212,7 @@ h1{
   .table-info{
       margin-left: 35%;
       margin-right: 10%;
+      background-color: #aaffaa;  
   }
   
   .grid-3{
